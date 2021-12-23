@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>프로필</title>
+    <link rel="stylesheet" href="css/profile.css"/>
+</head>
+<style>
+    * {
+        font-family: 'Noto Serif KR', serif;
+    }
+
+    .container {
+        width: 480px;
+        height: 800px;
+        border: 1px solid lightgray;
+        margin: 50px auto;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .pink-box {
+        height: 500px;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+    }
+
+    .line {
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .white-box {
+        height: 300px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 100px;
+    }
+
+    .profile-message {
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+    }
+
+    .image {
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 10pt;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ks-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        width: 110px;
+        height: 110px;
+        top: 450px;
+        left: 185px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="pink-box">
+        <div class="line">
+            <hr>
+        </div>
+        <div class="profile-message">
+            안녕하세요. 석우입니다. 프로등산러이며 사진촬영이 취미입니다. 낚시도 좋아합니다.
+        </div>
+    </div>
+    <img
+            class="photo"
+            src="./icons/KakaoTalk_20211210_232526158.jpg"
+            alt="profile image"
+    />
+    <div class="white-box">
+        <h3>석우</h3>
+        <div class="image">
+            <div class="chat-icon">
+                <div class="icon" src="./icons/나와의 채팅.png" alt="Chat"/>
+                <h4>나와의 채팅</h4>
+            </div>
+            <div class="profile-icon">
+                <img class="icon" src="./icons/프로필관리.png" alt="Profile"/>
+                <h4>프로필 관리</h4>
+            </div>
+            <div class="ks-icon">
+                <img class="icon" src="./icons/카스.png" alt="ks"/>
+                <h4>카카오스토리</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
